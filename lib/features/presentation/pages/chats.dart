@@ -32,7 +32,17 @@ class _ChatsState extends State<Chats> {
               radius: 30,
             ),
             title: Text(user.name),
-            subtitle: Text(user.massage),
+            subtitle: Row(
+              children: [
+                if (user.send)
+                  Icon(
+                    user.isviewed ? Icons.done_all_sharp : Icons.done,
+                    color: user.isviewed ? Colors.blue : Colors.grey,
+                    size: 18,
+                  ),
+                Text(user.massage)
+              ],
+            ),
             trailing: Text(user.time),
             onTap: () {},
           );

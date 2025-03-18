@@ -7,21 +7,27 @@ List chatUsers = [
       massage: 'hi',
       time: '11:20'),
   UserdataModel(
+      send: true,
+      isviewed: true,
       image: 'assets/images/pic1.png',
       name: 'Sarah',
       massage: '😭😭😭',
       time: '11:00'),
   UserdataModel(
+      send: true,
       image: 'assets/images/pic2.png',
       name: 'Maryam',
       massage: 'ok',
       time: '11:10'),
   UserdataModel(
+      send: true,
+      isviewed: true,
       image: 'assets/images/pic3.png',
       name: 'Hagar',
       massage: 'nooo',
       time: '10:20'),
   UserdataModel(
+      send: true,
       image: 'assets/images/pic4.png',
       name: 'Gana',
       massage: 'ohhh',
@@ -42,6 +48,8 @@ List chatUsers = [
       massage: 'يتم نوم',
       time: '6:30'),
   UserdataModel(
+      send: true,
+      isviewed: true,
       image: 'assets/images/pic8.png',
       name: 'Fairoz',
       massage: 'i guss that too',
@@ -107,6 +115,7 @@ List statUsers = [
 ];
 List callUsers = [
   UserdataModel(
+      missed: true,
       image: 'assets/images/pic10.png',
       name: 'Bat Man',
       massage: '5 minutes ago',
@@ -132,6 +141,7 @@ List callUsers = [
       massage: '20 minutes ago',
       time: ''),
   UserdataModel(
+      missed: true,
       image: 'assets/images/pic5.png',
       name: 'Menna',
       massage: '30 minutes ago',
@@ -147,6 +157,7 @@ List callUsers = [
       massage: '45 minutes ago',
       time: ''),
   UserdataModel(
+      missed: true,
       image: 'assets/images/pic8.png',
       name: 'Fairoz',
       massage: '50 minutes ago',
@@ -157,5 +168,3 @@ List callUsers = [
       massage: '55 minutes ago',
       time: ''),
 ];
-
- 
