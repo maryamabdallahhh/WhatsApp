@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import "package:whatsapp/features/homepage.dart";
-
+import 'package:whatsapp/core/theme/theme.dart';
+import 'package:whatsapp/features/presentation/pages/home_screen.dart';
+ 
 void main() {
   runApp(const WhatsApp());
 }
@@ -11,14 +12,9 @@ class WhatsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: mytheme,
       debugShowCheckedModeBanner: false,
-      home: const Homepage(),
-      theme: ThemeData(
-          appBarTheme: const AppBarTheme(
-        titleTextStyle: TextStyle(
-            color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400),
-        backgroundColor: Color(0xff017B6B),
-      )),
+      home: const HomeScreen() ,
     );
   }
 }
